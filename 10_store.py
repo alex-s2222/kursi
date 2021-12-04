@@ -49,17 +49,44 @@ print('Лампа -', lamps_quantity, 'шт, стоимость', lamps_cost, '�
 # WARNING для знающих циклы: БЕЗ циклов. Да, с переменными; да, неэффективно; да, копипаста.
 # Это задание на ручное вычисление - что бы потом понять как работают циклы и насколько с ними проще жить.
 
-# TODO здесь ваш код
+# Стол
+stoll_code = goods['Стол']
+stoll_item = store[stoll_code][0]
+stoll_quantity = stoll_item['quantity']
+stoll_cost = store[goods['Стол']][0]['quantity'] * store[goods['Стол']][0]['price'] + store[goods['Стол']][1]['quantity'] * store[goods['Стол']][1]['price']
+print('Стол-',stoll_quantity, 'стоимость', stoll_cost)
 
-##########################################################################################
-# ВНИМАНИЕ! После того как __ВСЯ__ домашняя работа сделана и запушена на сервер,         #
-# нужно зайти в ЛМС (LMS - Learning Management System ) по адресу http://go.skillbox.ru  #
-# и оформить попытку сдачи ДЗ! Без этого ДЗ не будет проверяться!                        #
-# Как оформить попытку сдачи смотрите видео - https://youtu.be/qVpN0L-C3LU               #
-##########################################################################################
+# Диван
+divan_code = goods['Диван']
+divan_item = store[divan_code][0]
+divan_item_1 = store[divan_code][1]
+divan_quantity = divan_item['quantity']
+divan_quantity_1 = divan_item_1['quantity']
+divan_price = divan_item['price']
+divan_price_1 = divan_item_1['price']
+divan_cost = divan_quantity * divan_price
+divan_cost_1 = divan_quantity_1 * divan_price_1
+print('Диван1 -', divan_quantity, 'шт, стоимость', divan_cost)
+print('Диван2 -', divan_quantity_1, 'шт, стоимость', divan_cost_1)
+
+# Стул1
+stul_code = goods['Стул']
+stul_item = store[stul_code][0]
+stul_quantity = stul_item['quantity']
+stul_price = stul_item['price']
+stul_cost = stul_quantity * stul_price
+print('Стул1-', stul_quantity, 'шт, стоимость', stul_cost)
+
+stul_item_1 = store[stul_code][1]
+stul_quantity_1 = stul_item_1['quantity']
+stul_const_1 = store[goods['Стул']][1]['quantity'] *store[goods['Стул']][1]['price']
+print('Стул2-', stul_quantity_1, 'шт стоимость', stul_const_1)
 
 
-
-
+stul_item_2 = store[stul_code][2]
+stul_quantity_2 = stul_item_2['quantity']
+stul_price_2 = stul_item_2['price']
+stul_const_2 = stul_quantity_2 * stul_price_2
+print('Стул2-', stul_quantity_2, 'шт стоимость', stul_const_2 )
 
 
