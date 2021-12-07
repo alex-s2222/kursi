@@ -54,7 +54,7 @@ stoll_code = goods['Стол']
 stoll_item = store[stoll_code][0]
 stoll_quantity = stoll_item['quantity']
 stoll_cost = store[goods['Стол']][0]['quantity'] * store[goods['Стол']][0]['price'] + store[goods['Стол']][1]['quantity'] * store[goods['Стол']][1]['price']
-print('Стол-',stoll_quantity, 'стоимость', stoll_cost)
+print('Стол-', stoll_quantity, 'стоимость', stoll_cost)
 
 # Диван
 divan_code = goods['Диван']
@@ -79,14 +79,11 @@ print('Стул1-', stul_quantity, 'шт, стоимость', stul_cost)
 
 stul_item_1 = store[stul_code][1]
 stul_quantity_1 = stul_item_1['quantity']
-stul_const_1 = store[goods['Стул']][1]['quantity'] *store[goods['Стул']][1]['price']
+stul_const_1 = store[goods['Стул']][1]['quantity'] * store[goods['Стул']][1]['price']
 print('Стул2-', stul_quantity_1, 'шт стоимость', stul_const_1)
-
 
 stul_item_2 = store[stul_code][2]
 stul_quantity_2 = stul_item_2['quantity']
 stul_price_2 = stul_item_2['price']
 stul_const_2 = stul_quantity_2 * stul_price_2
-print('Стул2-', stul_quantity_2, 'шт стоимость', stul_const_2 )
-
-
+print('Стул2-', stul_quantity_2, 'шт стоимость', stul_const_2)
