@@ -12,3 +12,12 @@
 educational_grant, expenses = 10000, 12000
 
 # TODO здесь ваш код
+
+summa = expenses
+for k in range(1, 10, 1):
+    expenses *= 1.03
+    summa += expenses
+
+educational_grant *= 10
+difference = summa - educational_grant
+print('Студенту надо поппросить:', round(difference, 2))
