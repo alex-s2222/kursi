@@ -22,6 +22,16 @@ paper_x, paper_y = 8, 9
 
 # TODO здесь ваш код
 
+if envelop_x == 10 and envelop_y == 7:
+    print('ДА')
+else:
+    print('НЕТ')
+
+if paper_x == 8 and paper_y == 9:
+    print('Yes')
+else:
+    print('NO')
+
 # Усложненное задание, решать по желанию.
 # Заданы размеры hole_x, hole_y прямоугольного отверстия и размеры brick_х, brick_у, brick_z кирпича (все размеры
 # могут быть в диапазоне от 1 до 1000)
