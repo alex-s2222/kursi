@@ -11,3 +11,8 @@
 a, b = 179, 37
 
 # TODO здесь ваш код
+
+while a > b:
+    z = a / b
+    a = a / b
+    print(round(z, 2))
