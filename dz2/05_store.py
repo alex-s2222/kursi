@@ -10,7 +10,6 @@ goods = {
 }
 
 # Есть словарь списков количества товаров на складе.
-
 store = {
     '12345': [
         {'quantity': 27, 'price': 42},
@@ -46,10 +45,15 @@ store = {
 #         подсчет стоимости товара
 #     вывод на консоль количества и стоимости товара на складе
 
-# TODO здесь ваш код
-
-
-
+for a in goods:
+    count = 1
+    code = goods[a]
+    for b in store[code]:
+        quantity = b['quantity']
+        price = b['price']
+        summa = quantity * price
+        print(a, count, 'кол-во', quantity, 'стоимость', summa)
+        count += 1
 
 
 
