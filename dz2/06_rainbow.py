@@ -18,11 +18,13 @@ rainbow_colors = (sd.COLOR_RED, sd.COLOR_ORANGE, sd.COLOR_YELLOW, sd.COLOR_GREEN
 
 point = sd.get_point(-1, -1)
 
+
 def rainbow(point, step):
     radius = 350
     for i in rainbow_colors:
         radius += step
         sd.circle(center_position=point, radius=radius, color=i, width=4)
+
 
 rainbow(point=point, step=10)
 
