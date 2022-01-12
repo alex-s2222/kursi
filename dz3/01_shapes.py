@@ -27,7 +27,23 @@ import simple_draw as sd
 # sd.line()
 # Результат решения см lesson_004/results/exercise_01_shapes.jpg
 
+def triangle(start_point, angle):
+    v1 = sd.get_vector(start_point=start_point, angle=angle, length=100, width=3)
+    v1.draw()
+    angle += 120
+# function starts at zero so 240 degrees
+    if angle < 241:
+        triangle(start_point=v1.end_point, angle=angle)
+    else:
+        return
+
+
+
 # TODO здесь ваш код
+point_0 = sd.get_point(90, 500)
+
+triangle(start_point=point_0,angle=0)
+
 
 # Часть 1-бис.
 # Попробуйте прикинуть обьем работы, если нужно будет внести изменения в этот код.
