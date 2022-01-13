@@ -38,13 +38,54 @@ def triangle(start_point, angle):
         return
 
 
+def pentagon(start_point, angle):
+    v1 = sd.get_vector(start_point=start_point, angle=angle, width=3)
+    v1.draw()
+    angle -= 72
+    if angle > -145:
+        pentagon(start_point=v1.end_point, angle=angle)
+    else:
+        return
+
+
+def cube(start_point, angle):
+    v1 = sd.get_vector(start_point=start_point, angle=angle, width=3)
+    v1.draw()
+    angle -= 90
+    if angle > -181:
+        cube(start_point=v1.end_point, angle=angle)
+    else:
+        return
+
+
+def hexagon(start_point, angle):
+    v1 = sd.get_vector(start_point=start_point, angle=angle, width=3)
+    v1.draw()
+    angle -= 60
+    if angle > -241:
+        hexagon(start_point=v1.end_point, angle=angle)
+    else:
+        return
 
 # TODO здесь ваш код
-point_0 = sd.get_point(90, 500)
 
-triangle(start_point=point_0,angle=0)
+point_triangle = sd.get_point(90, 450)
+point_pentagon = sd.get_point(130, 150)
+point_cube = sd.get_point(390, 440)
+point_hexagon = sd.get_point(400, 150)
 
 
+triangle(start_point=point_triangle, angle=0)
+pentagon(start_point=point_pentagon, angle=144)
+cube(start_point=point_cube, angle=90)
+hexagon(start_point=point_hexagon, angle=120)
+
+# v1 = sd.get_vector(start_point=point_hexagon, angle=120, width=3)
+# v1.draw()
+# v1 = sd. get_vector(start_point=v1.end_point, angle=60, width=3)
+# v1.draw()
+# v1 = sd.get_vector(start_point=v1.end_point, angle=0, width=3)
+# v1.draw()
 # Часть 1-бис.
 # Попробуйте прикинуть обьем работы, если нужно будет внести изменения в этот код.
 # Скажем, связывать точки не линиями, а дугами. Или двойными линиями. Или рисовать круги в угловых точках. Или...
