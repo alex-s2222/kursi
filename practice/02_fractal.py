@@ -47,7 +47,7 @@ point_0 = sd.get_point(300, 5)
 def branch(point, angle, length):
     if length < 1:
        return
-    v1 = sd   .get_vector(start_point=point, angle= angle, length=length, width=3)
+    v1 = sd.get_vector(start_point=point, angle=angle, length=length, width=3)
     v1.draw()
     next_point = v1.end_point
     next_angle = angle - 60
