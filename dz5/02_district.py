@@ -5,8 +5,9 @@
 # подсказка: для вывода элементов списка через запятую можно использовать функцию строки .join()
 # https://docs.python.org/3/library/stdtypes.html#str.join
 
+
 # TODO здесь ваш код
 
+from district import central_street as cs
 
-
-
+cs.central_print_all()
